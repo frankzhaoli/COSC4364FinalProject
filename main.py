@@ -1,4 +1,4 @@
-import main
+import BezierCurve
 import warnings
 warnings.simplefilter("ignore", UserWarning)
 from tkinter import *
@@ -24,8 +24,8 @@ class Window(Tk):
         files = filedialog.askopenfilenames()
 
     def matplotcanvas(self):
-        list_x, list_y, list_z=main.getsmoothpath()
-        new_x, new_y, new_z, updated_size=main.getsplineandradius()
+        list_x, list_y, list_z=BezierCurve.getsmoothpath()
+        new_x, new_y, new_z, updated_size=BezierCurve.getsplineandradius()
 
         #first graph
         fig=Figure(figsize=(5,5),dpi=100,edgecolor='r',facecolor='g')
