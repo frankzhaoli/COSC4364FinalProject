@@ -2,4 +2,4 @@
 
 Libraries that the code requires: csv, matplotlib, mpl_tookkits, tkinter, PIL, math, time
 
-To run: since GUI.py contains the main method, just run GUI.py script
+To run: main.py contains the main method, simply run main.py
